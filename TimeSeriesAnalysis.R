@@ -23,6 +23,7 @@ ibm  <- yahoo.read(ibm_url)
 lnkd2 <- yahoo.read(lnkd_url)
 tsla <- yahoo.read(tsla_url)
 
+
 ggplot(ibm,aes(Date,Close)) + 
   geom_line(aes(color="ibm")) +
   geom_line(data=lnkd2,aes(color="lnkd")) +
